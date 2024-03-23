@@ -1,1 +1,8 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+the vulnerability in this case is that the cookie token is exposed to the public which can be stolen by a malicious actor and used to impersonate as a authorised user.
+The token is exposed because httpOnly field is set to true. This can be avoided by setting it to false.
+
+CIA criteria:
+A for Authorization is violated by the above scenario where a malicious user poses as a authorised person and they get access to sensitive data.
+

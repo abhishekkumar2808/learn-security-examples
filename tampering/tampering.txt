@@ -1,0 +1,9 @@
+Tampering is the process of entering malicious intput from external sources such as database , website form or api call endpoint.
+
+In such cases, the external input should be verified and validated before using the input.
+Else, the input expected could be a normal string but a malicious actor can input a malicious script that will get executed.
+
+CIA criteria:
+I for Integrity is violated as the input in compromised and the whole system might be at risk!
+
+We can prevent such malicious actions by filtering out and validating the input before using the input data. 
