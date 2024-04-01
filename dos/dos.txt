@@ -1,2 +1,10 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The lack of error handling in the script insecure.js poses a security risk, as any errors during database queries could potentially lead to server crashes, making it unavailable to legitimate users.
+
+In the CIA, A for availablity is taking a hit here and affected here.
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+Data sanitation and error handling using try/catch blocks can help reduce the security risks posed by DOS.
+We could also implement some kind of limit on the number of requests a server can handle in a given time which would redirect the server traffic to other available nodes to temporaryily alleviate the issue.

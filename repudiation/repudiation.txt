@@ -1,2 +1,7 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
+
+The vulnerability in insecure.js compromises non-repudiation by failing to track user actions, as it lacks logging functionality. 
+This shortcoming is solved in secure.js, where a middleware is introduced to log incoming request details, thereby eliminating the vulnerability.
+
 - What additional security mechanisms can you incorporate to prevent such attacks?
+We can use authentication mechanisms like 2FA, OAuth2.0 or OTP verificiation systems

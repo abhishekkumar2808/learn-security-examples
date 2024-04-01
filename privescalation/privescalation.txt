@@ -1,0 +1,8 @@
+The insecure.js script has an exposed endpoint that is missing authentication which could lead to unwanted privilege escalation.
+For example, any normal user can access admin-level information and perform admin-level actions like accessing other users' details or deleting/modifying other people's details.
+These malicious users can even bump their access-level from normal user to that of the admin-level.
+
+This insecurity degrades both C for confidentiality and I identity of the CIA property.
+
+This type of malicious attack can be prevented by incorporating strong authentication procedures into the system to prevent fradulent access.
+This could be having OAuth 2.0 or OTP verificiation or 2-Factor authentication.
